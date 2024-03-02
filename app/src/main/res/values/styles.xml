@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="colorPrimary">@color/colorPrimary</item> -->
+        <!-- Modifiqué los colores -->
+        <item name="colorPrimary">#232D82</item>
+        <item name="colorPrimaryDark">#19226e</item>
+        <item name="colorAccent">#ec1b30</item>
+    </style>
+
+    <!--Tema de la SegundaActivity-->
+    <style name="ThemeSplash" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#21242b</item>
+        <item name="colorPrimaryDark">#21242b</item>
+        <item name="colorAccent">#ec1b30</item>
+    </style>
+
+</resources>

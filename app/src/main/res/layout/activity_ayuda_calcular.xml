@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".AyudaCalcularActivity">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.frias.omar.daniel.scraper.AyudaCalcularActivity">
+
+
+        <TextView
+            android:id="@+id/tvCalcularTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calcular tiempo de llegada"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAyudaCalcularTiempo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:text="En la parte superior se debe ingresar la 'cantidad de golpes' a los que se movió el scraper por el Punto A en caso de que no se haya contado mediante la pantalla anterior. En caso contrario, la aplicación lo cargará automáticamente.\n\n
+Después se deben ingresar los datos del punto de origen (Punto A), la 'PK' más los 'metros' y la 'hora' a la que pasó el scraper por dicho punto.\n\n
+Luego se debe ingresar la 'PK' más los 'metros' del punto de destino (Punto B) donde desea estimar el tiempo de llegada.\n\n
+Por último, presionar el botón 'CALCULAR' y la aplicación muestra aproximadamente la hora de llegada y la velocidad en km/h a la que se mueve el scraper."
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCalcularTiempo" />
+
+        <TextView
+            android:id="@+id/tvConsideraciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Consideraciones"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAyudaCalcularTiempo" />
+
+        <TextView
+            android:id="@+id/tvAyudaConsideraciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine"
+            android:text="Se debe tener en cuenta que existen factores que pueden atrasar o agilizar la llegada del scraper como atascamientos en válvulas, diferencias entre las longitudes de los caños, baches de líquidos, movimientos en la regulación, variación del diferencial de presión, etc. Por dichos motivos la aplicación estima el tiempo de llegada unos minutos antes.\n"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConsideraciones" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

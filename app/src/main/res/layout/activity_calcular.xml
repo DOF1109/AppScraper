@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".CalcularActivity">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.frias.omar.daniel.scraper.CalcularActivity">
+
+        <TextView
+            android:id="@+id/tGolpes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Golpes"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/eGolpes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="00"
+            android:inputType="number"
+            android:nextFocusDown="@id/etPkA"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tGolpes"
+            app:layout_constraintStart_toStartOf="@+id/tGolpes"
+            app:layout_constraintTop_toBottomOf="@+id/tGolpes" />
+
+        <EditText
+            android:id="@+id/etPkA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="000"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:nextFocusDown="@id/etMetrosA"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPkA"
+            app:layout_constraintStart_toEndOf="@+id/tvPkA"
+            app:layout_constraintTop_toTopOf="@+id/tvPkA" />
+
+        <TextView
+            android:id="@+id/tpHoraA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="00:00"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHoraA"
+            app:layout_constraintStart_toEndOf="@+id/tvHoraA"
+            app:layout_constraintTop_toTopOf="@+id/tvHoraA" />
+
+        <EditText
+            android:id="@+id/etMetrosA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="000"
+            android:maxLength="3"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:nextFocusDown="@id/etPkB"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMasA"
+            app:layout_constraintStart_toEndOf="@+id/tvMasA"
+            app:layout_constraintTop_toTopOf="@+id/tvMasA" />
+
+        <TextView
+            android:id="@+id/tvPuntoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="Punto A"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eGolpes" />
+
+        <TextView
+            android:id="@+id/tvPkA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="PK:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvPuntoA"
+            app:layout_constraintTop_toBottomOf="@+id/tvPuntoA" />
+
+        <TextView
+            android:id="@+id/tvHoraA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Hora:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvPkA"
+            app:layout_constraintTop_toBottomOf="@+id/tvPkA" />
+
+        <TextView
+            android:id="@+id/tvMasA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="+"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etPkA"
+            app:layout_constraintStart_toEndOf="@+id/etPkA"
+            app:layout_constraintTop_toTopOf="@+id/etPkA" />
+
+        <EditText
+            android:id="@+id/etPkB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="000"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:nextFocusDown="@id/etMetrosB"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPkB"
+            app:layout_constraintStart_toEndOf="@+id/tvPkB"
+            app:layout_constraintTop_toTopOf="@+id/tvPkB" />
+
+        <EditText
+            android:id="@+id/etMetrosB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="000"
+            android:maxLength="3"
+            android:inputType="number"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMasB"
+            app:layout_constraintStart_toEndOf="@+id/tvMasB"
+            app:layout_constraintTop_toTopOf="@+id/tvMasB" />
+
+        <TextView
+            android:id="@+id/tvPuntoB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Punto B"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/tvPuntoA"
+            app:layout_constraintTop_toBottomOf="@+id/tvHoraA" />
+
+        <TextView
+            android:id="@+id/tvPkB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="PK:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvPuntoB"
+            app:layout_constraintTop_toBottomOf="@+id/tvPuntoB" />
+
+        <TextView
+            android:id="@+id/tvHoraB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Hora:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvPkB"
+            app:layout_constraintTop_toBottomOf="@+id/tvPkB" />
+
+        <TextView
+            android:id="@+id/tvVelocidadB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Velocidad:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvHoraB"
+            app:layout_constraintTop_toBottomOf="@+id/tvHoraB" />
+
+        <TextView
+            android:id="@+id/tvHoraCalculada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="--:--"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHoraB"
+            app:layout_constraintStart_toEndOf="@+id/tvHoraB"
+            app:layout_constraintTop_toTopOf="@+id/tvHoraB" />
+
+        <TextView
+            android:id="@+id/tvVelocidadCalculada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="-.-- km/h"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvVelocidadB"
+            app:layout_constraintStart_toEndOf="@+id/tvVelocidadB"
+            app:layout_constraintTop_toTopOf="@+id/tvVelocidadB" />
+
+        <TextView
+            android:id="@+id/tvMasB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="+"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etPkB"
+            app:layout_constraintStart_toEndOf="@+id/etPkB"
+            app:layout_constraintTop_toTopOf="@+id/etPkB" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#00B2AF"
+            android:text="CALCULAR"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVelocidadCalculada" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
